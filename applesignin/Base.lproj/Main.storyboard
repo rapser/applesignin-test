@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="applesignin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="Pt7-bw-tqb" kind="show" identifier="mainSegue" id="kDv-35-vgw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="105"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="55u-Dn-Avk">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" interfaceStyle="light" id="Pt7-bw-tqb" customClass="MainViewController" customModule="applesignin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJr-26-I5y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmw-vV-VM6">
+                                <rect key="frame" x="20" y="411" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wmw-vV-VM6" firstAttribute="leading" secondItem="wBW-Ud-U2h" secondAttribute="leading" constant="20" id="Atf-ZX-eQZ"/>
+                            <constraint firstItem="wmw-vV-VM6" firstAttribute="centerY" secondItem="wJr-26-I5y" secondAttribute="centerY" id="S4S-AB-Bbk"/>
+                            <constraint firstItem="wBW-Ud-U2h" firstAttribute="trailing" secondItem="wmw-vV-VM6" secondAttribute="trailing" constant="20" id="gxT-nd-zlu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wBW-Ud-U2h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cnt-uG-HLD"/>
+                    <connections>
+                        <outlet property="detailsLabel" destination="wmw-vV-VM6" id="9Hb-Fc-4bZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1O5-a6-DKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="104"/>
+        </scene>
+    </scenes>
+</document>
